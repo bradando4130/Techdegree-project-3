@@ -1,0 +1,138 @@
+/* Global Styles */
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff; 
+}
+
+* {
+    box-sizing: border-box;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+} 
+
+.main-header {
+    color: white;
+    background-color: #3D4556;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.4em;
+}
+
+h2 {
+    color: #3D4556;
+    font: bold;
+}
+
+.blurb {
+    text-align: center;
+    padding: 20px 15px 2px;
+}
+
+.blurb > p {
+    border-bottom: 5px solid;
+    padding: 15px 10px 40px;
+}
+
+.blurb > p::after {
+    content: "";
+    position: absolute;
+    padding-top: 30px;
+    border-bottom: 1px solid;
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+#pcode {
+    max-width: 50%;
+}
+
+/* Form Styles */
+
+form {
+    padding: 2px 15px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.fset1,
+.fset2 {
+    display: flex;
+    border: none;
+    flex-direction: column;
+    padding: 10px 0 25px;
+    border-top: 2px solid; 
+}
+
+legend {
+    float: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #3D4556;
+}
+
+
+input[type=submit] {
+    background-color: #805694;
+    width: 100%;
+    height: 50px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+}
+/* Fieldset 1 */
+
+.fset1 > input,
+select {
+    background-color: #EAE9E8;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.fset1 > label {
+    padding: 12px 0px 10px;
+
+}
+/* Fieldset 2 */
+.fset2 > p {
+    padding: 15px 0px 10px;
+}
+.labelpairing {
+    flex-direction: row;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+} 
+
+.fset2 > label:last-child {
+    padding-top: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #EAE9E8;
+}
+
+
+
+
+
+
