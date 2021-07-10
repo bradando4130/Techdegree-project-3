@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Code Review</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -21,37 +22,52 @@
     <form>
         <fieldset class="fset1">
             <legend>Contact Information</legend>
-                <label for="fname">Full Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Required">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Required">
+                <div class="mediapair">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="Required" required>
+                </div>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" maxlength="10" pattern="[+]{1}[0-9]{11,14}">
+                <div class="mediapair">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required" required>
+                </div>
 
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="address">
+                <div class="mediapair">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" pattern="[+]{1}[0-9]{11,14}">
+                </div>
 
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
+                <div class="mediapair">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
 
-                <label for="state">State</label>
-                <select id="state" name="state">
-                    <option value="" disabled selected>Choose State</option>
-                    <option value="vic">Victoria</option>
-                    <option value="nsw">New South Wales</option>
-                    <option value="qld">Queensland</option>
-                    <option value="tas">Tasmania</option>
-                    <option value="sa">South Australia</option>
-                    <option value="wa">Western Australia</option>
-                    <option value="act">Australian Capital Territory</option>
-                    <option value="nt">Northern Territory</option>
-                </select> 
+                <div class="mediapair">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+
+                <div class="mediapair">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="vic">Victoria</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="qld">Queensland</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="sa">South Australia</option>
+                        <option value="wa">Western Australia</option>
+                        <option value="act">Australian Capital Territory</option>
+                        <option value="nt">Northern Territory</option>
+                    </select> 
+                </div>
                 
-                <label for="pcode">Post Code</label>
-                <input type="zip" id="pcode" name="pcode" min="4" maxlength="4">
-
+                <div class="mediapair">
+                    <label for="pcode">Post Code</label>
+                    <br>
+                    <input type="number" id="pcode" name="pcode">
+                </div>
         </fieldset>
                 
         <fieldset class="fset2">
@@ -78,11 +94,13 @@
                     <input type="radio" id="ptext" name="html" value="ptext">
                     <label for="ptext">Plain text</label>
                 </div>
+                <br>
+                <div class="labelpairing">
+                    <label for="othertopics">Other topics you would like to hear about</label>
+                    <textarea id="othertopics" name="othertopics" cols="20"></textarea>
+                </div>
 
-                <label for="othertopics">Other topics you would like to hear about
-                <textarea id="othertopics" name="othertopics" cols="20"></textarea>
-                
-                <input type="submit" value="Sign Up"> 
+                <input type="submit" id="submit" value="Sign Up"> 
         </fieldset>
     </form>
 
