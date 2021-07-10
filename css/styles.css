@@ -29,7 +29,7 @@
 .blurb > p {
     border-bottom: 5px solid;
     padding: 15px 10px 35px;
-    font-size: .9em;
+    font-size: .85em;
 }
 
 .blurb > p::after {
@@ -200,5 +200,10 @@ textarea {
         width: 25%;
         margin-right: 45%;
     }
+
+    .fset1,
+    .fset2 {
+    padding: 3em 0 2em;
+}
 
 }
