@@ -60,13 +60,18 @@ input {
 
 
 
-input:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
 select:focus,
 textarea:focus {
+    transition: 1s ;
     outline-color: #3D4556;
+    background-color: #ffffb3;
 }
 
-/* Form Styles */
+/* Form Styles */ 
 
 form {
     padding: 2px 15px;
@@ -93,8 +98,6 @@ legend {
     font-weight: bold;
     color: #3D4556;
 }
-
-
 
 
 input[type=submit] {
@@ -132,6 +135,13 @@ select {
 input[type="number"] {
     width: 50%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 /* Fieldset 2 */
 .fset2 > p {
